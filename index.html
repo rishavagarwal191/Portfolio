@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishav Agrawal | Data Science & AI Portfolio</title>
+  <meta name="description" content="Portfolio of Rishav Agrawal - Aspiring Data Scientist, Machine Learning Practitioner, and DSA Learner specializing in Predictive Analytics and RAG AI Systems.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Animated Particle Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Rishav</span>
+        <span class="logo-dot">.</span>
+        <span class="logo-accent">AI</span>
+        <span class="logo-bracket">&gt;</span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-microchip"></i> Skills</a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projects</a>
+        <a href="#interactive-lab" class="nav-link"><i class="fa-solid fa-flask-vial"></i> Live Labs</a>
+        <a href="#journey" class="nav-link"><i class="fa-solid fa-route"></i> Roadmap</a>
+        <a href="#contact" class="nav-link nav-btn"><i class="fa-solid fa-paper-plane"></i> Let's Connect</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" title="Toggle glow highlights" aria-label="Toggle theme">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </button>
+        <button id="menu-toggle" class="icon-btn hamburger" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section container">
+      <div class="hero-content">
+        <div class="hero-badge animate-fade-in">
+          <span class="pulse-dot"></span>
+          <span>Data Science & Generative AI Explorer</span>
+        </div>
+
+        <h1 class="hero-title animate-fade-in-up">
+          Hi, I'm <span class="gradient-text text-glow">Rishav Agrawal</span>
+        </h1>
+
+        <div class="hero-dynamic-text animate-fade-in-up delay-1">
+          <span class="prefix">I specialize in </span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor">|</span>
+        </div>
+
+        <p class="hero-description animate-fade-in-up delay-2">
+          Passionate about turning raw, messy data into intelligent, predictive solutions. 
+          Currently mastering <strong>Data Science</strong>, fine-tuning <strong>RAG AI architectures</strong>, 
+          and sharpening <strong>Data Structures & Algorithms</strong> to write high-performance, production-ready code.
+        </p>
+
+        <div class="hero-cta animate-fade-in-up delay-3">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore My Work</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#interactive-lab" class="btn btn-secondary">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Try Interactive Labs</span>
+          </a>
+        </div>
+
+        <div class="hero-socials animate-fade-in-up delay-4">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-chip" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-chip" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://kaggle.com" target="_blank" rel="noopener noreferrer" class="social-chip" title="Kaggle">
+            <i class="fa-brands fa-kaggle"></i>
+            <span>Kaggle</span>
+          </a>
+          <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-chip" title="LeetCode">
+            <i class="fa-solid fa-code"></i>
+            <span>LeetCode</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card / Tech Hologram -->
+      <div class="hero-visual animate-float">
+        <div class="glass-card hero-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">rishav@datascience:~/portfolio</div>
+          </div>
+          <div class="terminal-body">
+            <p><span class="term-prompt">$</span> <span class="term-cmd">python -m rishav.profile</span></p>
+            <div class="term-output">
+              <p><span class="term-key">name:</span> <span class="term-str">"Rishav Agrawal"</span></p>
+              <p><span class="term-key">focus:</span> <span class="term-str">"Data Science & Predictive ML"</span></p>
+              <p><span class="term-key">current_focus:</span> [</p>
+              <p class="term-indent"><span class="term-str">"Gurgaon Real Estate ML"</span>,</p>
+              <p class="term-indent"><span class="term-str">"RAG AI Teaching Assistant"</span>,</p>
+              <p class="term-indent"><span class="term-str">"Data Structures & Algorithms"</span></p>
+              <p>]</p>
+              <p><span class="term-key">ready_to_collaborate:</span> <span class="term-bool">True</span></p>
+            </div>
+            <div class="terminal-metrics">
+              <div class="metric-box">
+                <span class="metric-num" data-count="2">0</span><span class="metric-plus">+</span>
+                <span class="metric-label">Key ML/AI Projects</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-num" data-count="150">0</span><span class="metric-plus">+</span>
+                <span class="metric-label">DSA Problems Solved</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-num" data-count="100">0</span><span class="metric-plus">%</span>
+                <span class="metric-label">Dedication</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-user"></i> Background</span>
+        <h2 class="section-title">Driven by Data. Powered by <span class="gradient-text">Algorithms.</span></h2>
+        <p class="section-subtitle">A glimpse into my approach to machine learning, problem solving, and software design.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card about-card-main">
+          <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>My Data Science Philosophy</h3>
+          <p>
+            Data is only as valuable as the insights we can extract from it. I enjoy unraveling raw datasets, identifying hidden correlations, crafting domain-specific features, and training robust machine learning models that generalize well in real-world environments.
+          </p>
+          <p>
+            From predicting multi-crore property values in Gurgaon with advanced regression to architecting Retrieval-Augmented Generation (RAG) pipelines for interactive AI tutors, I bridge mathematical theory with practical software engineering.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Exploratory Data Analysis</span>
+            <span class="tag">Feature Engineering</span>
+            <span class="tag">Ensemble Modeling</span>
+            <span class="tag">RAG Pipelines</span>
+            <span class="tag">DSA Rigor</span>
+          </div>
+        </div>
+
+        <div class="about-cards-side">
+          <div class="glass-card mini-about-card">
+            <div class="side-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+              <h4>Predictive Analytics</h4>
+              <p>Specializing in regression, classification, outlier detection, and geospatial price prediction modeling.</p>
+            </div>
+          </div>
+
+          <div class="glass-card mini-about-card">
+            <div class="side-icon"><i class="fa-solid fa-robot"></i></div>
+            <div>
+              <h4>Generative AI & LLMs</h4>
+              <p>Building hallucination-resilient RAG systems with vector databases (Chroma/FAISS) and semantic retrieval.</p>
+            </div>
+          </div>
+
+          <div class="glass-card mini-about-card">
+            <div class="side-icon"><i class="fa-solid fa-code-merge"></i></div>
+            <div>
+              <h4>Algorithmic Problem Solving</h4>
+              <p>Continuous DSA learner optimizing time and space complexity with clean, elegant algorithms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-microchip"></i> Capabilities</span>
+        <h2 class="section-title">My Technical <span class="gradient-text">Toolbox</span></h2>
+        <p class="section-subtitle">Technologies and frameworks I use to develop data-driven applications.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill Category 1 -->
+        <div class="glass-card skill-category">
+          <div class="category-header">
+            <i class="fa-solid fa-chart-pie skill-icon"></i>
+            <div>
+              <h3>Data Science & ML</h3>
+              <p>Modeling, Statistics & Analytics</p>
+            </div>
+          </div>
+          <div class="skill-chips">
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-table"></i> Pandas & NumPy</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-network-wired"></i> Scikit-Learn</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-bolt"></i> XGBoost / Random Forest</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-chart-simple"></i> Matplotlib & Seaborn</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-filter"></i> Feature Engineering</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Category 2 -->
+        <div class="glass-card skill-category">
+          <div class="category-header">
+            <i class="fa-solid fa-brain skill-icon"></i>
+            <div>
+              <h3>GenAI & Modern AI</h3>
+              <p>LLMs, RAG & Vector Embeddings</p>
+            </div>
+          </div>
+          <div class="skill-chips">
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-layer-group"></i> RAG Architecture</span>
+              <span class="skill-level">Core Focus</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-database"></i> Vector DBs (Chroma/FAISS)</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-link"></i> LangChain / LlamaIndex</span>
+              <span class="skill-level">Active Study</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-magnifying-glass"></i> Semantic Chunking</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-comment-dots"></i> Prompt Engineering</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-cloud"></i> LLM APIs (OpenAI/Gemini)</span>
+              <span class="skill-level">Hands-on</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Category 3 -->
+        <div class="glass-card skill-category">
+          <div class="category-header">
+            <i class="fa-solid fa-code skill-icon"></i>
+            <div>
+              <h3>Data Structures & Algorithms</h3>
+              <p>Foundational Computer Science</p>
+            </div>
+          </div>
+          <div class="skill-chips">
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-cubes"></i> Arrays & Strings</span>
+              <span class="skill-level">Strong</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-arrows-split-up-and-left"></i> Two Pointers & Slid. Window</span>
+              <span class="skill-level">Practiced</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-sitemap"></i> Trees & Graphs</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-stairs"></i> Dynamic Programming</span>
+              <span class="skill-level">In Progress</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-stopwatch"></i> Time/Space Optimization</span>
+              <span class="skill-level">Methodical</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-laptop-code"></i> LeetCode & Problem Solving</span>
+              <span class="skill-level">Daily Routine</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Category 4 -->
+        <div class="glass-card skill-category">
+          <div class="category-header">
+            <i class="fa-solid fa-toolbox skill-icon"></i>
+            <div>
+              <h3>Tools & Ecosystem</h3>
+              <p>Development & Deployment</p>
+            </div>
+          </div>
+          <div class="skill-chips">
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="skill-level">Version Control</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-book-open"></i> Jupyter Notebooks</span>
+              <span class="skill-level">Daily Driver</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-window-maximize"></i> Streamlit</span>
+              <span class="skill-level">Rapid Prototyping</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-server"></i> FastAPI / Flask</span>
+              <span class="skill-level">API Integration</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-solid fa-database"></i> SQL Basics</span>
+              <span class="skill-level">Querying</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"><i class="fa-brands fa-linux"></i> Command Line & Scripting</span>
+              <span class="skill-level">Comfortable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Portfolio Highlights</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Real-world applications showcasing predictive ML, NLP, and modern AI engineering.</p>
+      </div>
+
+      <div class="projects-container">
+        <!-- PROJECT 1: Gurgaon Housing Prices -->
+        <article class="glass-card project-card featured-glow">
+          <div class="project-media">
+            <div class="project-mockup house-mockup">
+              <div class="mockup-badge"><i class="fa-solid fa-house-chimney"></i> Real Estate ML</div>
+              <div class="mockup-graph">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+              </div>
+              <div class="mockup-pill">
+                <i class="fa-solid fa-location-dot"></i> Gurgaon Sectors
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-meta">
+              <span class="project-category">Machine Learning & Analytics</span>
+              <span class="project-status completed"><i class="fa-solid fa-circle-check"></i> Complete & Tested</span>
+            </div>
+
+            <h3 class="project-title">Gurgaon Housing Prices Predictor & Market Analytics</h3>
+
+            <p class="project-desc">
+              An end-to-end Machine Learning real estate intelligence system that predicts property valuations across Gurgaon sectors. Built using multi-stage feature engineering, handling skewed real estate distributions, outlier treatments, and ensemble regressors.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-double"></i>
+                <span>Trained and benchmarked across Linear, Ridge, Random Forest, and XGBoost models.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-double"></i>
+                <span>Engineered sector-level locality scores, luxury amenity index, and price-per-sqft factors.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-double"></i>
+                <span>Deployed with an interactive UI allowing home buyers to estimate property values instantly.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Scikit-Learn</span>
+              <span class="tech-badge">XGBoost</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">Streamlit</span>
+              <span class="tech-badge">Matplotlib/Seaborn</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-sm btn-primary open-modal-btn" data-project="gurgaon">
+                <i class="fa-solid fa-circle-info"></i> View Deep-Dive Architecture
+              </button>
+              <a href="#interactive-lab" class="btn btn-sm btn-outline">
+                <i class="fa-solid fa-sliders"></i> Try Live ML Estimator
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: RAG-based AI Teaching Assistant -->
+        <article class="glass-card project-card featured-glow-alt">
+          <div class="project-media">
+            <div class="project-mockup rag-mockup">
+              <div class="mockup-badge"><i class="fa-solid fa-brain"></i> RAG & GenAI</div>
+              <div class="rag-flow-visual">
+                <div class="rag-node node-doc"><i class="fa-solid fa-file-pdf"></i> Docs</div>
+                <div class="rag-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="rag-node node-vec"><i class="fa-solid fa-database"></i> Vector DB</div>
+                <div class="rag-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="rag-node node-llm"><i class="fa-solid fa-microchip"></i> LLM</div>
+              </div>
+              <div class="mockup-pill pill-ai">
+                <i class="fa-solid fa-graduation-cap"></i> AI Tutor In Action
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-meta">
+              <span class="project-category">Generative AI & Education</span>
+              <span class="project-status in-progress"><i class="fa-solid fa-spinner fa-spin"></i> Active & Expanding</span>
+            </div>
+
+            <h3 class="project-title">RAG-Based AI Teaching Assistant</h3>
+
+            <p class="project-desc">
+              A context-grounded AI learning assistant built to eliminate LLM hallucinations for students. Ingests academic course materials, lecture notes, and textbooks, using dense semantic retrieval to deliver precise, citation-backed explanations and interactive quizzes.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-double"></i>
+                <span>Document chunking and dense vector embedding generation using state-of-the-art embedding models.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-double"></i>
+                <span>ChromaDB/FAISS vector store integration with cosine similarity search and context reranking.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-double"></i>
+                <span>Prompt-engineered pedagogical persona that guides students step-by-step rather than spoiling answers.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">LangChain</span>
+              <span class="tech-badge">ChromaDB / FAISS</span>
+              <span class="tech-badge">OpenAI / Gemini API</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Streamlit / FastAPI</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-sm btn-primary open-modal-btn" data-project="rag">
+                <i class="fa-solid fa-circle-info"></i> View System Architecture
+              </button>
+              <a href="#interactive-lab" class="btn btn-sm btn-outline">
+                <i class="fa-solid fa-terminal"></i> Test RAG Simulator
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE LABS SECTION -->
+    <section id="interactive-lab" class="section container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-flask-vial"></i> Live Experimentation</span>
+        <h2 class="section-title">Interactive <span class="gradient-text">Project Demos</span></h2>
+        <p class="section-subtitle">Experience Rishav's projects right here in your browser with interactive simulations.</p>
+      </div>
+
+      <!-- Lab Switcher Tabs -->
+      <div class="lab-tabs">
+        <button class="lab-tab-btn active" data-tab="housing-tab">
+          <i class="fa-solid fa-house-laptop"></i> Gurgaon Housing Estimator
+        </button>
+        <button class="lab-tab-btn" data-tab="rag-tab">
+          <i class="fa-solid fa-robot"></i> RAG AI Assistant Simulator
+        </button>
+        <button class="lab-tab-btn" data-tab="dsa-tab">
+          <i class="fa-solid fa-code"></i> DSA Algorithmic Playground
+        </button>
+      </div>
+
+      <!-- Tab 1: Housing Price Estimator -->
+      <div class="lab-content active glass-card" id="housing-tab">
+        <div class="lab-header">
+          <div>
+            <h3><i class="fa-solid fa-chart-line"></i> Gurgaon Property Valuation Model</h3>
+            <p>Adjust the real estate parameters below to simulate how the trained machine learning pipeline estimates market value.</p>
+          </div>
+          <span class="model-badge"><i class="fa-solid fa-sliders"></i> ML Pipeline Active</span>
+        </div>
+
+        <div class="estimator-grid">
+          <div class="controls-column">
+            <!-- Sector -->
+            <div class="control-group">
+              <label for="sector-select"><i class="fa-solid fa-location-dot"></i> Gurgaon Locality / Sector</label>
+              <select id="sector-select" class="form-input">
+                <option value="golf-course">Golf Course Road (Premium Corridor)</option>
+                <option value="golf-course-ext" selected>Golf Course Extension (High Growth)</option>
+                <option value="cyber-city">DLF Phase 2 / Cyber City (Tech Hub)</option>
+                <option value="sohna-road">Sohna Road (Residential Prime)</option>
+                <option value="dwarka-expressway">Dwarka Expressway (Emerging Hub)</option>
+                <option value="new-gurgaon">New Gurgaon (Affordable Growth)</option>
+              </select>
+            </div>
+
+            <!-- Bedrooms (BHK) -->
+            <div class="control-group">
+              <label><i class="fa-solid fa-bed"></i> Bedrooms (BHK): <span id="bhk-val" class="highlight-val">3 BHK</span></label>
+              <input type="range" id="bhk-slider" min="1" max="5" value="3" class="range-slider">
+              <div class="slider-marks">
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+              </div>
+            </div>
+
+            <!-- Built-up Area -->
+            <div class="control-group">
+              <label><i class="fa-solid fa-ruler-combined"></i> Super Built-up Area: <span id="area-val" class="highlight-val">1850 sq. ft.</span></label>
+              <input type="range" id="area-slider" min="600" max="6000" step="50" value="1850" class="range-slider">
+              <div class="slider-marks">
+                <span>600 sqft</span><span>3000 sqft</span><span>6000 sqft</span>
+              </div>
+            </div>
+
+            <!-- Luxury Index -->
+            <div class="control-group">
+              <label><i class="fa-solid fa-gem"></i> Luxury & Amenities Score: <span id="luxury-val" class="highlight-val">7.5 / 10</span></label>
+              <input type="range" id="luxury-slider" min="1" max="10" step="0.5" value="7.5" class="range-slider">
+              <div class="slider-marks">
+                <span>Basic (1)</span><span>Standard (5)</span><span>Ultra Luxury (10)</span>
+              </div>
+            </div>
+
+            <!-- Property Type -->
+            <div class="control-group">
+              <label><i class="fa-solid fa-building"></i> Property Type</label>
+              <div class="radio-group">
+                <label class="radio-chip active">
+                  <input type="radio" name="prop-type" value="apartment" checked> High-Rise Apartment
+                </label>
+                <label class="radio-chip">
+                  <input type="radio" name="prop-type" value="builder-floor"> Builder Floor
+                </label>
+                <label class="radio-chip">
+                  <input type="radio" name="prop-type" value="villa"> Luxury Villa
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prediction Result Column -->
+          <div class="result-column">
+            <div class="price-display-card">
+              <div class="price-label">Estimated Market Valuation</div>
+              <div class="price-number" id="predicted-price">₹ 2.45 Cr</div>
+              <div class="price-range" id="price-confidence">Confidence Range: ₹ 2.31 Cr – ₹ 2.59 Cr</div>
+              
+              <hr class="divider">
+
+              <div class="factors-breakdown">
+                <h4>Feature Impact Analysis</h4>
+                <div class="factor-row">
+                  <span>Base Rate / Sq. Ft:</span>
+                  <strong id="rate-per-sqft">₹ 13,243 / sqft</strong>
+                </div>
+                <div class="factor-row">
+                  <span>Location Multiplier:</span>
+                  <strong id="location-factor">1.35x (High Demand)</strong>
+                </div>
+                <div class="factor-row">
+                  <span>Luxury Appreciation:</span>
+                  <strong id="luxury-impact">+18.5%</strong>
+                </div>
+              </div>
+
+              <div class="model-note">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Simulated using feature weights from trained Gurgaon dataset regression pipeline.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: RAG Teaching Assistant Simulator -->
+      <div class="lab-content glass-card" id="rag-tab">
+        <div class="lab-header">
+          <div>
+            <h3><i class="fa-solid fa-robot"></i> RAG AI Assistant Interactive Pipeline</h3>
+            <p>See step-by-step how the RAG model retrieves textbook passages and answers student questions without hallucinations.</p>
+          </div>
+          <span class="model-badge"><i class="fa-solid fa-brain"></i> Vector Search Emulation</span>
+        </div>
+
+        <div class="rag-demo-grid">
+          <div class="rag-input-box">
+            <label for="rag-question"><i class="fa-solid fa-circle-question"></i> Select or Enter a Question:</label>
+            <div class="quick-questions">
+              <button class="quick-q-btn active" data-q="What is the difference between Bias and Variance in ML?">Bias vs Variance</button>
+              <button class="quick-q-btn" data-q="How does Gradient Descent optimize neural network loss?">Gradient Descent</button>
+              <button class="quick-q-btn" data-q="Why do we use ChromaDB for Vector Search in RAG?">Vector DBs in RAG</button>
+              <button class="quick-q-btn" data-q="What is the difference between Array and Linked List in memory?">DSA: Arrays vs Linked Lists</button>
+            </div>
+            
+            <div class="input-with-btn">
+              <input type="text" id="rag-custom-input" class="form-input" value="What is the difference between Bias and Variance in ML?">
+              <button id="run-rag-btn" class="btn btn-primary"><i class="fa-solid fa-bolt"></i> Run Pipeline</button>
+            </div>
+
+            <!-- Pipeline Visual Steps -->
+            <div class="pipeline-tracker">
+              <div class="pipe-step step-complete" id="step-embed">
+                <div class="step-num">1</div>
+                <div class="step-label">Generate Embeddings</div>
+              </div>
+              <div class="pipe-step step-complete" id="step-retrieve">
+                <div class="step-num">2</div>
+                <div class="step-label">Vector DB Cosine Search</div>
+              </div>
+              <div class="pipe-step step-complete" id="step-rank">
+                <div class="step-num">3</div>
+                <div class="step-label">Top-K Chunk Rerank</div>
+              </div>
+              <div class="pipe-step step-complete" id="step-llm">
+                <div class="step-num">4</div>
+                <div class="step-label">Grounded LLM Response</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RAG Pipeline Output Viewer -->
+          <div class="rag-output-box">
+            <div class="retrieved-chunks-container">
+              <h4><i class="fa-solid fa-quote-left"></i> Retrieved Context Chunks (Top Similarity)</h4>
+              <div class="chunk-card" id="rag-retrieved-chunk">
+                <div class="chunk-header">
+                  <span class="chunk-source"><i class="fa-solid fa-book"></i> Textbook: "Elements of Statistical Learning" (Ch. 7)</span>
+                  <span class="chunk-score">Cosine Similarity: 0.94</span>
+                </div>
+                <p class="chunk-text" id="rag-chunk-text">
+                  "Bias refers to the error introduced by approximating a real-world problem with a simplified model. High bias leads to underfitting. Variance refers to the model's sensitivity to small fluctuations in the training set. High variance leads to overfitting."
+                </p>
+              </div>
+            </div>
+
+            <div class="ai-response-container">
+              <h4><i class="fa-solid fa-graduation-cap"></i> AI Teaching Assistant Response</h4>
+              <div class="ai-chat-bubble" id="rag-ai-response">
+                <p>Hello! Let's break down <strong>Bias vs. Variance</strong> intuitively:</p>
+                <ul>
+                  <li><strong>Bias (Underfitting):</strong> Your model is too simplistic (e.g., trying to fit a straight line to a complex curve). It misses key patterns in both training and testing data.</li>
+                  <li><strong>Variance (Overfitting):</strong> Your model is overly complex, memorizing noise in your training data. It performs brilliantly on train sets, but fails on unseen test data.</li>
+                </ul>
+                <div class="citation-badge"><i class="fa-solid fa-check"></i> Verified from course lecture materials</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: DSA Algorithmic Playground -->
+      <div class="lab-content glass-card" id="dsa-tab">
+        <div class="lab-header">
+          <div>
+            <h3><i class="fa-solid fa-code"></i> DSA Problem Solver & Complexity Visualizer</h3>
+            <p>Explore algorithmic patterns Rishav regularly practices to write optimized code.</p>
+          </div>
+          <span class="model-badge"><i class="fa-solid fa-stopwatch"></i> O(N) Efficiency Focus</span>
+        </div>
+
+        <div class="dsa-grid">
+          <div class="dsa-selector">
+            <label><i class="fa-solid fa-list-check"></i> Choose Algorithmic Pattern:</label>
+            <div class="pattern-list">
+              <button class="pattern-card active" data-pattern="two-sum">
+                <div class="pattern-title">Two Sum (Hash Map Strategy)</div>
+                <div class="pattern-meta">Time: O(N) | Space: O(N)</div>
+              </button>
+              <button class="pattern-card" data-pattern="binary-search">
+                <div class="pattern-title">Binary Search (Divide & Conquer)</div>
+                <div class="pattern-meta">Time: O(log N) | Space: O(1)</div>
+              </button>
+              <button class="pattern-card" data-pattern="sliding-window">
+                <div class="pattern-title">Sliding Window Maximum</div>
+                <div class="pattern-meta">Time: O(N) | Space: O(K)</div>
+              </button>
+            </div>
+          </div>
+
+          <div class="dsa-code-viewer">
+            <div class="code-box-header">
+              <span id="dsa-current-title"><i class="fa-brands fa-python"></i> Two Sum Optimal Solution</span>
+              <button class="copy-code-btn" id="copy-dsa-btn" title="Copy code"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            <pre class="code-box"><code id="dsa-code-display">def two_sum(nums: list[int], target: int) -> list[int]:
+    """
+    Find two indices such that their elements sum up to target.
+    Time Complexity: O(N) single pass
+    Space Complexity: O(N) auxiliary hash map
+    """
+    seen = {}
+    for idx, num in enumerate(nums):
+        complement = target - num
+        if complement in seen:
+            return [seen[complement], idx]
+        seen[num] = idx
+    return []</code></pre>
+            <div class="dsa-explanation" id="dsa-explanation-box">
+              <strong>Why this works:</strong> Instead of the naive O(N²) nested loop check, a dictionary acts as an inverted lookup index, reducing the search of the complement to an instant O(1) average time per lookup.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP / JOURNEY SECTION -->
+    <section id="journey" class="section container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-route"></i> Growth Path</span>
+        <h2 class="section-title">My Learning <span class="gradient-text">Milestones</span></h2>
+        <p class="section-subtitle">The progression of knowledge and hands-on projects shaping my career.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Milestone 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">Foundation Phase</span>
+            <h3>Python, Mathematics & Data Analysis</h3>
+            <p>Mastered core Python programming, linear algebra, multivariable calculus, and applied probability. Built proficiency in Pandas, NumPy, and statistical hypothesis testing.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">Machine Learning Phase</span>
+            <h3>Gurgaon Housing Prices & Predictive ML</h3>
+            <p>Developed full-stack ML workflows: raw data cleaning, geolocation feature engineering, correlation analysis, and regression modeling. Deployed with Streamlit.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">Algorithmic Rigor</span>
+            <h3>Data Structures & Algorithms (DSA)</h3>
+            <p>Systematically tackling LeetCode patterns including Arrays, Hashing, Two Pointers, Sliding Windows, Trees, and Dynamic Programming to write scalable, production-grade logic.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">Modern AI Phase</span>
+            <h3>RAG-Based AI Teaching Assistant & LLMs</h3>
+            <p>Pioneering Retrieval-Augmented Generation workflows. Mastering vector embeddings, ChromaDB, prompt engineering, and hybrid semantic search for real-world educational AI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-envelope"></i> Get In Touch</span>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Exceptional</span></h2>
+        <p class="section-subtitle">Interested in collaborating on Data Science, ML models, or GenAI projects? Reach out!</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info glass-card">
+          <h3>Contact Details</h3>
+          <p>I'm always open to discussing new opportunities, data science internships, research collaborations, or algorithmic challenges.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:rishav.agrawal.ds@gmail.com" class="contact-val">rishav.agrawal.ds@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-val">India (Open to Remote & Global Relocation)</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <span class="contact-label">Specialization</span>
+                <span class="contact-val">Data Science, ML & RAG Architectures</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links-footer">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://kaggle.com" target="_blank" rel="noopener noreferrer" class="social-circle" title="Kaggle"><i class="fa-brands fa-kaggle"></i></a>
+            <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-circle" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card glass-card">
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Sharma" required>
+              </div>
+              <div class="form-field">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="alex@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Subject / Project Topic</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Collaboration on Data Science / AI Project" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" class="form-input" placeholder="Hi Rishav, I came across your portfolio and would like to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Architecture Modal -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true">
+    <div class="modal-card glass-card">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div id="modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="logo-name">Rishav Agrawal</span>
+        <p>Continuous learner building intelligent data systems and scalable code.</p>
+      </div>
+      <div class="footer-center">
+        <p>&copy; <span id="current-year">2026</span> Rishav Agrawal. Designed with passion for Data Science & AI.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
